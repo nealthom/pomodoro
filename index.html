@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="theme.css">
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet"> 
+</head>
+<body>
+	
+	<div id="pomo" >
+	<h1 id="title">Pomodoro</h1>
+	<div id="displayHolder" onclick="time.startTimer()">
+	<span id="display" ></span>
+	</div>
+	
+	<div id="sessionBar">
+	<span id="sessTitle">Session Length</span>
+	<button onclick="time.incrementSess()">+</button>
+	<span id="session">25</span>
+	<button onclick="time.decSess()">-</button>
+	</div>			
+	<div id="breakBar">
+	<span id="breakTitle">Break Length</span>
+	<button onclick="time.incrementBreak()">+</button>
+	<span id="break">5</span>
+	<button onclick="time.decBreak()">-</button>
+	</div>	
+	
+	</div>
+	<script src="pomodoro.js"></script>
+</body>
+</html>
